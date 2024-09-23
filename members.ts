@@ -25,5 +25,6 @@ export const members: Member[] = [
     sources: ["https://blog.trocco.io/feed"],
     twitterUsername: "trocco_jp",
     githubUsername: "trocco-io",
+    websiteUrl: "https://blog.trocco.io",
   },
 ];
