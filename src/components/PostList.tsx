@@ -55,14 +55,14 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             {hostname}
           </div>
         )}
+        {contentSnippet && (
+          <p className="post-link__description">
+            {contentSnippet.length > 100
+              ? contentSnippet.slice(0, 100) + "..."
+              : contentSnippet}
+          </p>
+        )}
       </a>
-      {contentSnippet && (
-        <p className="post-link__description">
-          {contentSnippet.length > 100
-            ? contentSnippet.slice(0, 100) + "..."
-            : contentSnippet}
-        </p>
-      )}
       {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
         <div className="post-link__new-label">NEW</div>
       )}

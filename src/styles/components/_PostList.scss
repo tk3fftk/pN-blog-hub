@@ -59,7 +59,7 @@ $side-padding-sm: 1rem;
 }
 .post-link__description {
   font-size: 13px;
-  padding: 0 $side-padding 1.5rem;
+  margin-top: 0.9rem;
   @include mq(sm) {
     display: none;
   }
