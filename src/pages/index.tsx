@@ -13,56 +13,54 @@ import {
 } from "@src/components/ContentWrapper";
 
 const Page: NextPage = () => {
-  return (
-    <>
-      <PageSEO
-        title={config.siteMeta.title}
-        description={config.siteMeta.description}
-        path="/"
-        removeSiteNameFromTitle={true}
-      />
+  return <>
+    <PageSEO
+      title={config.siteMeta.title}
+      description={config.siteMeta.description}
+      path="/"
+      removeSiteNameFromTitle={true}
+    />
 
-      <section className="home-hero">
-        <ContentWrapper>
-          <h1 className="home-hero__title">{config.siteMeta.title}</h1>
-          {!!config.siteMeta.description && (
-            <p className="home-hero__description">
-              {config.siteMeta.description}
-            </p>
-          )}
-        </ContentWrapper>
-      </section>
+    <section className="home-hero">
+      <ContentWrapper>
+        <h1 className="home-hero__title">{config.siteMeta.title}</h1>
+        {!!config.siteMeta.description && (
+          <p className="home-hero__description">
+            {config.siteMeta.description}
+          </p>
+        )}
+      </ContentWrapper>
+    </section>
 
-      <section className="home-members">
-        <ContentWrapper>
-          <div className="home-section-title-container">
-            <h2 className="home-section-title">Members</h2>
-            <Link href="/members">
-              <a className="home-section-link">See Details →</a>
-            </Link>
-          </div>
+    <section className="home-members">
+      <ContentWrapper>
+        <div className="home-section-title-container">
+          <h2 className="home-section-title">Members</h2>
+          <Link href="/members" className="home-section-link">
+            See Details →
+          </Link>
+        </div>
 
-          <div className="home-members-container">
-            <UndoWrapForScroll>
-              <ScrollableMembers />
-            </UndoWrapForScroll>
-          </div>
-        </ContentWrapper>
-      </section>
+        <div className="home-members-container">
+          <UndoWrapForScroll>
+            <ScrollableMembers />
+          </UndoWrapForScroll>
+        </div>
+      </ContentWrapper>
+    </section>
 
-      <section className="home-posts">
-        <ContentWrapper>
-          <div className="home-section-title-container">
-            <h2 className="home-section-title">Articles</h2>
-          </div>
+    <section className="home-posts">
+      <ContentWrapper>
+        <div className="home-section-title-container">
+          <h2 className="home-section-title">Articles</h2>
+        </div>
 
-          <div className="home-posts-container">
-            <PostList items={posts as PostItem[]} />
-          </div>
-        </ContentWrapper>
-      </section>
-    </>
-  );
+        <div className="home-posts-container">
+          <PostList items={posts as PostItem[]} />
+        </div>
+      </ContentWrapper>
+    </section>
+  </>;
 };
 
 export default Page;
