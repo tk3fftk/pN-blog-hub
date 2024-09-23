@@ -33,6 +33,7 @@ export const members: Member[] = [
       "https://zenn.dev/tk3fftk/feed",
       "https://note.com/tk3fftk/rss",
       "https://qiita.com/tk3fftk/feed",
+      "https://speakerdeck.com/tk3fftk.rss",
     ],
     twitterUsername: "tk3fftk",
     githubUsername: "tk3fftk",
