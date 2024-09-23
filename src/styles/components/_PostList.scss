@@ -57,6 +57,13 @@ $side-padding-sm: 1rem;
   border-radius: 3px;
   margin-right: 6px;
 }
+.post-link__description {
+  font-size: 13px;
+  margin-top: 0.9rem;
+  @include mq(sm) {
+    display: none;
+  }
+}
 .post-link__new-label {
   position: absolute;
   right: -5px;

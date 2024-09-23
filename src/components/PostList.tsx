@@ -13,7 +13,8 @@ import {
 dayjs.extend(relativeTime);
 
 const PostLink: React.FC<{ item: PostItem }> = (props) => {
-  const { authorId, title, isoDate, link, dateMiliSeconds } = props.item;
+  const { authorId, title, isoDate, link, dateMiliSeconds, contentSnippet } =
+    props.item;
   const member = getMemberById(authorId);
   if (!member) return null;
 
@@ -53,6 +54,13 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             />
             {hostname}
           </div>
+        )}
+        {contentSnippet && (
+          <p className="post-link__description">
+            {contentSnippet.length > 100
+              ? contentSnippet.slice(0, 100) + "..."
+              : contentSnippet}
+          </p>
         )}
       </a>
       {dateMiliSeconds && dateMiliSeconds > Date.now() - 86400000 * 3 && (
