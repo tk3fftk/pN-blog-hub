@@ -8,20 +8,23 @@ export const SiteHeader: React.FC = () => (
     <ContentWrapper>
       <div className="site-header__inner">
         <Link href="/" passHref className="site-header__logo-link">
-
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt={config.siteMeta.title}
             className="site-header__logo-img"
           />
-
         </Link>
         <div className="site-header__links">
           {config.headerLinks.map((link, i) => {
             const key = `header-link-${i}`;
             if (link.href.startsWith("/")) {
               return (
-                <Link key={key} href={link.href} passHref className="site-header__link">
+                <Link
+                  key={key}
+                  href={link.href}
+                  passHref
+                  className="site-header__link"
+                >
                   {link.title}
                 </Link>
               );
