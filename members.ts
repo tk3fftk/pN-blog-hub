@@ -2,28 +2,29 @@ import { Member } from "@src/types";
 
 export const members: Member[] = [
   {
-    id: "catnose",
-    name: "CatNose",
-    role: "CTO",
-    bio: "デザインが好きなプログラマー。開発者向けの情報共有プラットフォームzenn.devを開発しています。",
-    avatarSrc: "/avatars/catnose.jpg",
-    sources: [
-      "https://zenn.dev/catnose99/feed",
-      "https://catnose.medium.com/feed",
-    ],
-    includeUrlRegex: "medium.com|zenn.dev",
-    twitterUsername: "catnose99",
-    githubUsername: "catnose99",
-    websiteUrl: "https://catnose99.com",
-  },
-  {
-    id: "john_doe",
-    name: "John Doe",
+    id: "tk3fftk",
+    name: "Hiroki Takatsuka",
     role: "SRE",
     bio: "Site Reliability Engineer.",
-    avatarSrc: "/avatars/doe.jpg",
-    sources: ["https://note.com/catnose/rss"],
-    excludeUrlRegex: "n3a59e3cdd820",
-    twitterUsername: "catnose99",
+    avatarSrc:
+      "https://pbs.twimg.com/profile_images/1696407915555688448/wPADdvGj_400x400.jpg",
+    sources: [
+      "https://zenn.dev/tk3fftk/feed",
+      "https://note.com/tk3fftk/rss",
+      "https://qiita.com/tk3fftk/feed",
+    ],
+    twitterUsername: "tk3fftk",
+    githubUsername: "tk3fftk",
+  },
+  {
+    id: "trocco_blog",
+    name: "TROCCO Blog",
+    role: "Blog",
+    bio: "TROCCO Blog",
+    avatarSrc: "/avatars/trocco.png",
+    sources: ["https://blog.trocco.io/feed"],
+    twitterUsername: "trocco_jp",
+    githubUsername: "trocco-io",
+    websiteUrl: "https://blog.trocco.io",
   },
 ];

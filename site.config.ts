@@ -1,8 +1,8 @@
 export const config = {
   siteMeta: {
-    title: "Team Blog Hub",
-    teamName: "catnose Inc.",
-    description: "RSS based blog starter kit for teams.",
+    title: "pN Blog Hub",
+    teamName: "primeNumber Inc.",
+    description: "primeNumber fun site.",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
@@ -14,12 +14,16 @@ export const config = {
       href: "/about",
     },
     {
+      title: "Members",
+      href: "/members",
+    },
+    {
       title: "Company",
-      href: "https://zenn.dev/catnose99/articles/cb72a73368a547756862",
+      href: "https://primenumber.com/",
     },
     {
       title: "GitHub",
-      href: "https://github.com/catnose99/team-blog-hub",
+      href: "https://github.com/tk3fftk/pN-blog-hub",
     },
   ],
 };
