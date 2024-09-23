@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "npm run build:posts && npm run vercel-build",
+    "build:posts": "ts-node --project tsconfig.builder.json ./src/builder/posts.ts",
     "vercel-build": "next build",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "npm run pages:build && wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy"
+    "pages:build": "npm run build && npx @cloudflare/next-on-pages",
+    "preview": "npm run build && wrangler pages dev",
+    "deploy": "npm run build && wrangler pages deploy"
   },
   "dependencies": {
     "dayjs": "^1.11.0",
