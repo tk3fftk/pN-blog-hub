@@ -21,8 +21,11 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
 
   return (
     <article className="post-link">
-      <Link href={getMemberPath(member.id)} passHref className="post-link__author">
-
+      <Link
+        href={getMemberPath(member.id)}
+        passHref
+        className="post-link__author"
+      >
         <img
           src={member.avatarSrc}
           className="post-link__author-img"
@@ -36,7 +39,6 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
             {dayjs(isoDate).fromNow()}
           </time>
         </div>
-
       </Link>
       <a href={link} className="post-link__main-link">
         <h2 className="post-link__title">{title}</h2>

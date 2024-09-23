@@ -17,9 +17,8 @@ const Page: NextPage = () => {
                 Team Blog Hub
               </a>
               を利用して作成された primeNumber Inc. の非公式ファンサイトです。
-              何かあれば https://github.com/tk3fftk/pN-blog-hub/issues/new
-              までお知らせください。
             </p>
+            <p>何かあれば GitHub から Issue を作成してください。</p>
           </div>
           <div className="about__actions">
             <LinkBackHome />

@@ -2,12 +2,12 @@ export const config = {
   siteMeta: {
     title: "pN Blog Hub",
     teamName: "primeNumber Inc.",
-    description: "primeNumber fun site.",
+    description: "primeNumber unofficial fun site.",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
-      ? "https://team-blog-hub.vercel.app"
-      : "http://localhost:3000",
+      ? "https://pn-blog-hub.pages.dev"
+      : "http://localhost:8788",
   headerLinks: [
     {
       title: "About",
