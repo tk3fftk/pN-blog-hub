@@ -4,8 +4,8 @@ export const members: Member[] = [
   {
     id: "trocco_blog",
     name: "TROCCO Blog",
-    role: "",
-    bio: "",
+    role: "Blog",
+    bio: "Blog",
     avatarSrc: "/avatars/trocco.png",
     sources: ["https://blog.trocco.io/feed"],
     twitterUsername: "trocco_jp",
@@ -15,8 +15,8 @@ export const members: Member[] = [
   {
     id: "pn_blog",
     name: "primeNumber Blog",
-    role: "",
-    bio: "",
+    role: "Blog",
+    bio: "Blog",
     avatarSrc: "/logo.png",
     sources: ["https://note.primenumber.co.jp/rss"],
     twitterUsername: "primeNumberinc",
