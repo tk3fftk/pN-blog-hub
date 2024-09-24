@@ -2,7 +2,7 @@ export const config = {
   siteMeta: {
     title: "pN Blog Hub",
     teamName: "primeNumber Inc.",
-    description: "primeNumber unofficial fun site.",
+    description: "primeNumber unofficial fansite.",
   },
   siteRoot:
     process.env.NODE_ENV === "production"
