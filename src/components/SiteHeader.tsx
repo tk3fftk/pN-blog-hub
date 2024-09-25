@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { config } from "@site.config";
+import { FaGithub } from "react-icons/fa6";
 
 import { ContentWrapper } from "@src/components/ContentWrapper";
 
@@ -28,12 +29,22 @@ export const SiteHeader: React.FC = () => (
                   {link.title}
                 </Link>
               );
+            } else if (link.title === "GitHub") {
+              return (
+                <a key={key} href={link.href} className="site-header__link">
+                  <FaGithub
+                    className="site-header__link-icon"
+                    aria-label={`GitHub Repository`}
+                  />
+                </a>
+              );
+            } else {
+              return (
+                <a key={key} href={link.href} className="site-header__link">
+                  {link.title}
+                </a>
+              );
             }
-            return (
-              <a key={key} href={link.href} className="site-header__link">
-                {link.title}
-              </a>
-            );
           })}
         </div>
       </div>
