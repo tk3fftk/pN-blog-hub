@@ -1,5 +1,5 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from "next";
-import { FaTwitter, FaGithub } from "react-icons/fa";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
 import { AiOutlineLink } from "react-icons/ai";
 
 import { members } from "@members";
@@ -49,10 +49,10 @@ const Page: NextPage<Props> = (props) => {
             <div className="member-header__links">
               {twitterUsername && (
                 <a
-                  href={`https://twitter.com/${twitterUsername}`}
+                  href={`https://x.com/${twitterUsername}`}
                   className="member-header__link"
                 >
-                  <FaTwitter
+                  <FaXTwitter
                     className="member-header__link-icon"
                     aria-label={`Follow @${twitterUsername} on Twitter`}
                   />
