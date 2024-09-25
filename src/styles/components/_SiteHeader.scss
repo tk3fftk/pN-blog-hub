@@ -23,6 +23,10 @@
   align-items: center;
 }
 .site-header__link {
-  margin-left: 1.5rem;
+  margin-left: 1.0rem;
   font-size: 0.95rem;
+}
+.site-header__link-icon {
+  font-size: 1.5rem;
+  display: flex;
 }
