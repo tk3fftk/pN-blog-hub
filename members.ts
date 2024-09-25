@@ -14,11 +14,14 @@ export const members: Member[] = [
   },
   {
     id: "pn_blog",
-    name: "primeNumber Blog",
+    name: "primeNumber Blog/Press Release",
     role: "Blog",
-    bio: "Blog",
+    bio: "Blog/Press Release",
     avatarSrc: "/logo.png",
-    sources: ["https://note.primenumber.co.jp/rss"],
+    sources: [
+      "https://note.primenumber.co.jp/rss",
+      "https://prtimes.jp/companyrdf.php?company_id=39164",
+    ],
     twitterUsername: "primeNumberinc",
     websiteUrl: "https://note.primenumber.co.jp/",
   },
