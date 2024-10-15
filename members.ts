@@ -170,7 +170,10 @@ export const members: Member[] = [
     bio: "",
     avatarSrc:
       "https://pbs.twimg.com/profile_images/1790757932969365505/fYytJNyS_400x400.jpg",
-    sources: ["https://note.com/tiger_pn/rss"],
+    sources: [
+      "https://note.com/tiger_pn/rss",
+      "https://zenn.dev/knuna_t/feed",
+    ],
     twitterUsername: "knuna_t",
   },
   {
