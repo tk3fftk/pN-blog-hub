@@ -1,6 +1,7 @@
 import { PostItem } from "@src/types";
 import { members } from "@members";
 import posts from "@.contents/posts.json";
+import buildInfo from "@.contents/build_info.json";
 
 export function getMemberByName(name: string) {
   return members.find((member) => member.name === name);
@@ -19,4 +20,8 @@ export function getFaviconSrcFromOrigin(hostname: string) {
 }
 export function getMemberPath(id: string) {
   return `/members/${encodeURIComponent(id)}`;
+}
+
+export function getBuildDate() {
+  return new Date(buildInfo.lastBuildDate).toLocaleString();
 }

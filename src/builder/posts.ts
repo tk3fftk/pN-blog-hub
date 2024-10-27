@@ -89,4 +89,8 @@ async function getMemberFeedItems(member: Member): Promise<PostItem[]> {
   allPostItems.sort((a, b) => b.dateMiliSeconds - a.dateMiliSeconds);
   fs.ensureDirSync(".contents");
   fs.writeJsonSync(".contents/posts.json", allPostItems);
+
+  fs.writeJsonSync(".contents/build_info.json", {
+    lastBuildDate: new Date().toISOString(),
+  });
 })();
