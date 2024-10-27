@@ -169,11 +169,8 @@ export const members: Member[] = [
     role: "",
     bio: "",
     avatarSrc:
-      "https://pbs.twimg.com/profile_images/1790757932969365505/fYytJNyS_400x400.jpg",
-    sources: [
-      "https://note.com/tiger_pn/rss",
-      "https://zenn.dev/knuna_t/feed",
-    ],
+      "https://pbs.twimg.com/profile_images/1849363732297822209/q7z6bAmC_400x400.jpg",
+    sources: ["https://note.com/tiger_pn/rss", "https://zenn.dev/knuna_t/feed"],
     twitterUsername: "knuna_t",
   },
   {
