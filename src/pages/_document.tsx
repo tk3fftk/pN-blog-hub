@@ -19,7 +19,7 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..500&display=swap"
           />
         </Head>
         <body>
