@@ -183,4 +183,14 @@ export const members: Member[] = [
     sources: ["https://note.com/imooo67/rss"],
     twitterUsername: "m37pN",
   },
+  {
+    id: "hgkcho",
+    name: "yatsu",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F3677442%2F67fb59fa9b5c963540906c19115b95457e6bde89%2Fx_large.png%3F1705420448?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=42df036dfdef0b22db0ef8e3d3923d54",
+    sources: ["https://qiita.com/hgkcho/feed"],
+    twitterUsername: "hgkcho",
+  },
 ];
