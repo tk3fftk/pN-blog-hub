@@ -193,4 +193,16 @@ export const members: Member[] = [
     sources: ["https://qiita.com/hgkcho/feed"],
     twitterUsername: "hgkcho",
   },
+  {
+    id: "cappyzawa",
+    name: "cappyzawa",
+    role: "",
+    bio: "",
+    avatarSrc: "https://pbs.twimg.com/profile_images/1060528940383526913/p_hMRMel_400x400.jpg",
+    sources: [
+      "https://zenn.dev/cappyzawa/feed",
+    ],
+    twitterUsername: "cappyzawa",
+    githubUsername: "cappyzawa",
+  },
 ];
