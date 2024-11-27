@@ -51,6 +51,7 @@ export const members: Member[] = [
       "https://zenn.dev/gtnao/feed",
       "https://note.com/gtnao/rss",
       "https://qiita.com/gtnao0219/feed",
+      "https://speakerdeck.com/gtnao.rss",
     ],
     twitterUsername: "gtnao",
     githubUsername: "gtnao",
