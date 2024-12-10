@@ -11,6 +11,11 @@ class MyDocument extends Document {
             type="image/png"
             href={`${config.siteRoot}/logo.png`}
           />
+          <link
+            rel="icon"
+            type="image/x-icon"
+            href={`${config.siteRoot}/primenumber.ico`}
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
