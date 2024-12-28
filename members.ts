@@ -17,7 +17,7 @@ export const members: Member[] = [
     name: "primeNumber Blog/Press Release",
     role: "Blog",
     bio: "Blog/Press Release",
-    avatarSrc: "/primenumber.ico",
+    avatarSrc: "/logo_mark.png",
     sources: [
       "https://note.primenumber.co.jp/rss",
       "https://prtimes.jp/companyrdf.php?company_id=39164",
@@ -169,8 +169,7 @@ export const members: Member[] = [
     name: "Kana Kitagawa/たいがー🐯",
     role: "",
     bio: "",
-    avatarSrc:
-      "https://pbs.twimg.com/profile_images/1849363732297822209/q7z6bAmC_400x400.jpg",
+    avatarSrc: "./tiger.png",
     sources: ["https://note.com/tiger_pn/rss", "https://zenn.dev/knuna_t/feed"],
     twitterUsername: "knuna_t",
   },
