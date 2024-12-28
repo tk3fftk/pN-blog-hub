@@ -204,4 +204,77 @@ export const members: Member[] = [
     twitterUsername: "cappyzawa",
     githubUsername: "cappyzawa",
   },
+  {
+    id: "e_koma",
+    name: "e_koma",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://pbs.twimg.com/profile_images/991635466360254465/JmZuuUpr_400x400.jpg",
+    sources: ["https://zenn.dev/e_koma/feed", "https://qiita.com/e__koma/feed"],
+    twitterUsername: "e__koma",
+    githubUsername: "e-koma",
+  },
+  {
+    id: "paulxll",
+    name: "Toru Nishiyama",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://storage.googleapis.com/zenn-user-upload/avatar/e3fd9ba9d5.jpeg",
+    sources: [
+      "https://zenn.dev/paulxll/feed",
+      "https://qiita.com/paulxll/feed",
+      "https://note.com/tnishiyama/rss",
+    ],
+    twitterUsername: "paulxll",
+    githubUsername: "paulxll",
+  },
+  {
+    id: "khpkymgc",
+    name: "khpkymgc",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F3929084%2F4965c0a30b2e2e6ef116ba6f471011ff2a18727c%2Fx_large.png%3F1730942106?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=574a7225c1feece6d814972659485403",
+    sources: ["https://qiita.com/khpkymgc/feed"],
+  },
+  {
+    id: "imgw0917",
+    name: "imgw0917",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F3932340%2F7c3bb149116fffd2055703f86d72e3d7b8e4573b%2Flarge.png%3F1731300284?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=e9224ceca8e3cfb1500dae7a7740f996",
+    sources: ["https://qiita.com/imgw0917/feed"],
+  },
+  {
+    id: "okeyaki",
+    name: "Shinya Otsuki",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F37607%2Fprofile-images%2F1561221068?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=6b6838e87e98e03fffa506d59cd52db9",
+    sources: ["https://qiita.com/okeyaki/feed"],
+    githubUsername: "okeyaki",
+  },
+  {
+    id: "MK0000",
+    name: "みき たけ",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-image-store%2F0%2F3033246%2Fc70cbcc9d69b6366a5cc638a5ed571da564534a7%2Flarge.png%3F1701142351?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=eb8117766025942a814f19da996351a2",
+    sources: ["https://qiita.com/MK0000/feed"],
+  },
+  {
+    id: "kimura34",
+    name: "sayo kimura",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://assets.st-note.com/production/uploads/images/136180632/profile_8778199c46990ebcb0d341afcd71144b.jpg?fit=bounds&format=jpeg&quality=85&width=330",
+    sources: ["https://note.com/kimura34/rss"],
+    twitterUsername: "sayo_saru",
+  },
 ];
