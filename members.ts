@@ -277,4 +277,17 @@ export const members: Member[] = [
     sources: ["https://note.com/kimura34/rss"],
     twitterUsername: "sayo_saru",
   },
+  {
+    id: "NateRive",
+    name: "Nate Rive",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F252596%2Fprofile-images%2F1738635406?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=5078bdad8a302c67dc5311610582bc22",
+    sources: [
+      "https://qiita.com/NateRive/feed",
+    ],
+    twitterUsername: "hiros_uilibrary",
+    githubUsername: "NateRive",
+  },
 ];
