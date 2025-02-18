@@ -291,4 +291,16 @@ export const members: Member[] = [
     twitterUsername: "hiros_uilibrary",
     githubUsername: "NateRive",
   },
+  {
+    id: "kazz187",
+    name: "Kazuki Akamine",
+    role: "",
+    bio: "",
+    avatarSrc:
+      "https://avatars.githubusercontent.com/u/761734?s=400&u=3a8f32ba67ef794b0c8e2a2851d6d48cf9ace205&v=4",
+    sources: [
+      "https://zenn.dev/kazz187/feed",
+    ],
+    githubUsername: "kazz187",
+  },
 ];
