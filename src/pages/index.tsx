@@ -67,7 +67,10 @@ const Page: NextPage = () => {
 
       <section className="author-toggle-section">
         <ContentWrapper>
-          <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
+          <div style={{display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24}}>
+            <span className="author-toggle-label">
+              <span role="img" aria-label="filter">🔎</span> Filter Official Contents
+            </span>
             {TOGGLE_AUTHORS.map((author) => (
               <label key={author.id} className="author-toggle-switch">
                 <input
