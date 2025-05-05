@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import { useState, useMemo } from "react";
 
 import posts from "@.contents/posts.json";
 import { config } from "@site.config";
@@ -8,7 +9,42 @@ import { PageSEO } from "@src/components/PageSEO";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { getBuildDate } from "@src/utils/helper";
 
+const TOGGLE_AUTHORS = [
+  { id: "trocco_blog", name: "TROCCO Blog" },
+  { id: "pn_blog", name: "primeNumber Blog/Press Release and Podcast" },
+];
+
 const Page: NextPage = () => {
+  // 全記事から筆者一覧を抽出
+  const authors = useMemo(() => {
+    const map = new Map<string, string>();
+    (posts as PostItem[]).forEach((p) => {
+      map.set(p.authorId, p.authorName);
+    });
+    return Array.from(map.entries()).map(([id, name]) => ({ id, name }));
+  }, []);
+
+  // 筆者ごとの表示状態（デフォルト全員ON）
+  const [visibleAuthors, setVisibleAuthors] = useState<Record<string, boolean>>({
+    trocco_blog: true,
+    pn_blog: true,
+  });
+
+  // トグル切り替え
+  const handleToggle = (id: string) => {
+    setVisibleAuthors((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  // フィルタ後の記事
+  const filteredPosts = useMemo(() => {
+    return (posts as PostItem[]).filter((p) => {
+      if (TOGGLE_AUTHORS.some((a) => a.id === p.authorId)) {
+        return visibleAuthors[p.authorId];
+      }
+      return true; // それ以外は常に表示
+    });
+  }, [visibleAuthors]);
+
   return (
     <>
       <PageSEO
@@ -29,6 +65,26 @@ const Page: NextPage = () => {
         </ContentWrapper>
       </section>
 
+      <section className="author-toggle-section">
+        <ContentWrapper>
+          <div style={{display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24}}>
+            <span className="author-toggle-label">
+              <span role="img" aria-label="filter">🔎</span> Filter Official Contents
+            </span>
+            {TOGGLE_AUTHORS.map((author) => (
+              <label key={author.id} className="author-toggle-switch">
+                <input
+                  type="checkbox"
+                  checked={visibleAuthors[author.id]}
+                  onChange={() => handleToggle(author.id)}
+                />
+                <span>{author.name}</span>
+              </label>
+            ))}
+          </div>
+        </ContentWrapper>
+      </section>
+
       <section className="home-posts">
         <ContentWrapper>
           <div className="home-section-title-container">
@@ -36,7 +92,7 @@ const Page: NextPage = () => {
           </div>
 
           <div className="home-posts-container">
-            <PostList items={posts as PostItem[]} />
+            <PostList items={filteredPosts} />
           </div>
         </ContentWrapper>
       </section>
