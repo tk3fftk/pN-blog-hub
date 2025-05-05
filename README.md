@@ -11,7 +11,7 @@ https://pn-blog-hub.pages.dev/
   - `sources` にはRSSがある媒体であれば追加可能です。
   - 「追加したいけどいじるのわからん、こわい」などがあればissueを作成するか、Slackで連絡してください。
 
-```json
+```javascript
   {
     id: "tk3fftk",
     name: "Hiroki Takatsuka",
