@@ -104,6 +104,7 @@ export const members: Member[] = [
       "https://zenn.dev/mnmandahalf/feed",
       "https://note.com/mnmandahalf/rss",
       "https://qiita.com/mnmandahalf/feed",
+      "https://speakerdeck.com/mnmandahalf.rss",
     ],
     twitterUsername: "mnmandahalf",
     githubUsername: "mnmandahalf",
