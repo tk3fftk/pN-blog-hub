@@ -90,7 +90,10 @@ export const members: Member[] = [
     bio: "",
     avatarSrc:
       "https://assets.st-note.com/production/uploads/images/80259131/profile_9761428b8553d153d986492377b348fd.jpeg?width=4000&height=4000&fit=bounds&format=jpg&quality=90",
-    sources: ["https://note.com/kekekenta/rss"],
+    sources: [
+      "https://note.com/kekekenta/rss",
+      "https://zenn.dev/kekekenta/feed",
+    ],
     twitterUsername: "kekekenta",
     githubUsername: "kekekenta",
   },
