@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-img-element": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/display-name": "off"
+  }
+}
