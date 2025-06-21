@@ -2,6 +2,7 @@ name = "pn-blog-hub"
 compatibility_date = "2025-06-05"
 compatibility_flags = ["nodejs_compat"]
 main = ".vercel/output/static/_worker.js/index.js"
+workers_dev = true
 
 [assets]
 directory = ".vercel/output/static"
