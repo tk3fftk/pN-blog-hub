@@ -15,14 +15,6 @@ const TOGGLE_AUTHORS = [
 ];
 
 const Page: NextPage = () => {
-  // 全記事から筆者一覧を抽出
-  const authors = useMemo(() => {
-    const map = new Map<string, string>();
-    (posts as PostItem[]).forEach((p) => {
-      map.set(p.authorId, p.authorName);
-    });
-    return Array.from(map.entries()).map(([id, name]) => ({ id, name }));
-  }, []);
 
   // 筆者ごとの表示状態（デフォルト全員ON）
   const [visibleAuthors, setVisibleAuthors] = useState<Record<string, boolean>>({
