@@ -152,7 +152,7 @@ export const members: Member[] = [
     role: "",
     bio: "",
     avatarSrc:
-      "https://pbs.twimg.com/profile_images/1220366370736525313/PCZ9Arx6_400x400.jpg",
+      "https://pbs.twimg.com/profile_images/1879746008823029760/nv997L1q_400x400.jpg",
     sources: [
       "https://note.com/pn_yamaken/rss",
       "https://qiita.com/yam_dr/feed",
