@@ -10,6 +10,7 @@ https://pn-blog-hub.pages.dev/
 - `members.ts` に追加したいメンバーの情報を記載してください。 (以下、コピペ用)
   - `sources` にはRSSがある媒体であれば追加可能です。
   - 「追加したいけどいじるのわからん、こわい」などがあればissueを作成するか、Slackで連絡してください。
+- 画像を変えたい場合は `avatarSrc` の変更と、`public/avatars/` からの削除を行うPull Requestを出してください。
 
 ```javascript
   {
