@@ -5,6 +5,7 @@ import { config } from "@site.config";
 import { members } from "@members";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { PageSEO } from "@src/components/PageSEO";
+import { Avatar } from "@src/components/Avatar";
 import { getMemberPath } from "@src/utils/helper";
 import { Member } from "@src/types";
 
@@ -12,8 +13,9 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
     <Link href={getMemberPath(member.id)} className="member-card" passHref>
       <div className="member-card__avatar">
-        <img
-          src={member.avatarSrc}
+        <Avatar
+          memberId={member.id}
+          originalSrc={member.avatarSrc}
           alt={member.name}
           width={80}
           height={80}
