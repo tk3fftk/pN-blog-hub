@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import https from "https";
 import http from "http";
-import { members } from "../members.js";
+import { members } from "../members.ts";
 
 const AVATARS_DIR = "public/avatars";
 

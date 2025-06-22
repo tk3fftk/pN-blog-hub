@@ -10,8 +10,8 @@
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
     "lint": "oxlint",
-    "avatars:sync": "node scripts/sync-avatars.js",
-    "avatars:migrate": "node scripts/migrate-all-avatars.js"
+    "avatars:sync": "ts-node --project tsconfig.builder.json scripts/sync-avatars.js",
+    "avatars:migrate": "ts-node --project tsconfig.builder.json scripts/migrate-all-avatars.js"
   },
   "dependencies": {
     "dayjs": "^1.11.0",

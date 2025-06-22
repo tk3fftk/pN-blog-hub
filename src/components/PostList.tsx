@@ -9,6 +9,7 @@ import {
   getMemberPath,
   getMemberById,
 } from "@src/utils/helper";
+import { Avatar } from "@src/components/Avatar";
 
 dayjs.extend(relativeTime);
 
@@ -27,8 +28,9 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
         passHref
         className="post-link__author"
       >
-        <img
-          src={member.avatarSrc}
+        <Avatar
+          memberId={member.id}
+          originalSrc={member.avatarSrc}
           className="post-link__author-img"
           width={35}
           height={35}

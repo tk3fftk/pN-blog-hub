@@ -7,6 +7,7 @@ import { PostItem, Member } from "@src/types";
 import { PostList } from "@src/components/PostList";
 import { ContentWrapper } from "@src/components/ContentWrapper";
 import { PageSEO } from "@src/components/PageSEO";
+import { Avatar } from "@src/components/Avatar";
 import {
   getMemberById,
   getMemberPostsById,
@@ -36,8 +37,9 @@ const Page: NextPage<Props> = (props) => {
         <ContentWrapper>
           <header className="member-header">
             <div className="member-header__avatar">
-              <img
-                src={avatarSrc}
+              <Avatar
+                memberId={id}
+                originalSrc={avatarSrc}
                 alt={name}
                 width={100}
                 height={100}
