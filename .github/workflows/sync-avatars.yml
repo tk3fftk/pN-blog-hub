@@ -24,7 +24,7 @@ jobs:
         run: npm ci
         
       - name: Download new avatar images
-        run: node scripts/sync-avatars.js
+        run: npm run avatars:sync
         
       - name: Check for changes
         id: changes
