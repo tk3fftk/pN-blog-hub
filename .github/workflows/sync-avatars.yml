@@ -1,0 +1,45 @@
+name: Sync Avatar Images
+
+on:
+  pull_request:
+    paths:
+      - 'members.ts'
+    types: [opened, synchronize]
+
+jobs:
+  sync-avatars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.head_ref }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Download new avatar images
+        run: node scripts/sync-avatars.js
+        
+      - name: Check for changes
+        id: changes
+        run: |
+          git add public/avatars/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Commit avatar images
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "chore: sync avatar images for new members"
+          git push

@@ -9,7 +9,9 @@
     "pages:build": "npm run build:posts && npx @cloudflare/next-on-pages",
     "preview": "npm run build && wrangler dev",
     "deploy": "npm run build && wrangler deploy",
-    "lint": "oxlint"
+    "lint": "oxlint",
+    "avatars:sync": "ts-node --project tsconfig.builder.json scripts/sync-avatars.js",
+    "avatars:migrate": "ts-node --project tsconfig.builder.json scripts/migrate-all-avatars.js"
   },
   "dependencies": {
     "dayjs": "^1.11.0",
