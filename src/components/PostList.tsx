@@ -43,7 +43,7 @@ const PostLink: React.FC<{ item: PostItem }> = (props) => {
           </time>
         </div>
       </Link>
-      <a href={link} className="post-link__main-link">
+      <a href={link} className="post-link__main-link" target="_blank" rel="noopener noreferrer">
         <h2 className="post-link__title">{title}</h2>
         {hostname && (
           <div className="post-link__site">
