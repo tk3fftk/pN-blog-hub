@@ -19,12 +19,12 @@ export const members: Member[] = [
     bio: "Blog/Press Release",
     avatarSrc: "/logo_mark.png",
     sources: [
-      "https://note.primenumber.co.jp/rss",
+      "https://lounge.primenumber.com/rss",
       "https://prtimes.jp/companyrdf.php?company_id=39164",
       "https://rss.listen.style/p/primenumber/rss",
     ],
     twitterUsername: "primeNumberinc",
-    websiteUrl: "https://note.primenumber.co.jp/",
+    websiteUrl: "https://lounge.primenumber.com",
   },
   {
     id: "tk3fftk",
@@ -289,9 +289,7 @@ export const members: Member[] = [
     bio: "",
     avatarSrc:
       "https://qiita-user-profile-images.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F252596%2Fprofile-images%2F1738635406?ixlib=rb-4.0.0&auto=compress%2Cformat&lossless=0&w=128&s=5078bdad8a302c67dc5311610582bc22",
-    sources: [
-      "https://qiita.com/NateRive/feed",
-    ],
+    sources: ["https://qiita.com/NateRive/feed"],
     twitterUsername: "hiros_uilibrary",
     githubUsername: "NateRive",
   },
@@ -302,9 +300,7 @@ export const members: Member[] = [
     bio: "",
     avatarSrc:
       "https://avatars.githubusercontent.com/u/761734?s=400&u=3a8f32ba67ef794b0c8e2a2851d6d48cf9ace205&v=4",
-    sources: [
-      "https://zenn.dev/kazz187/feed",
-    ],
+    sources: ["https://zenn.dev/kazz187/feed"],
     githubUsername: "kazz187",
   },
 ];
